@@ -14,7 +14,7 @@ function addProfile(id, name, imageURL) {
   title.style = 'text-align: center;';
   title.innerHTML = name;
   var image = document.createElement('img');
-  image.src = 'https://webcms3.cse.unsw.edu.au/static/uploads/profilepic/z5205060/2aa787b83e548812b10c09bd900c6258f07be568fafbbd30e952e030b0105b80/Work_tfpk_sq.jpg';
+  image.src = imageURL;
   image.style = 'width: 100%; height: 100%;';
   alignDiv.appendChild(title);
   alignDiv.appendChild(image);
