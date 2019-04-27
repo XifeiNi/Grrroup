@@ -16,16 +16,7 @@ class People extends React.Component {
   
   render() {
     return (
-    <React.Fragment>
-      <div className="people_container">
-      <div className="photo_container">
-        <img src={logo} />
-      </div>
-      <div className="name">
-        Thomas Kunc
-      </div>
-      </div>
-    </React.Fragment>
+
     );
   }
 }

@@ -33,7 +33,6 @@ function App() {
     </React.Fragment>*/
     
     <React.Fragment>
-
       <div id="board" className="fancy-scroll-bar">
         <div className="list-wrapper"> 
           <div className="list js-list-content"> 
@@ -45,6 +44,7 @@ function App() {
               className="list-header-name mod-list-name js-list-name-input"> 
               To do
               </textarea>
+
             </div>
           </div>
         </div>
