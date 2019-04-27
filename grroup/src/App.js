@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './Thomas.jpg';
 import './App.css';
 
 function App() {
@@ -20,15 +20,34 @@ function App() {
         </a>
       </header>
     </div>*/
-
-    <React.Fragment>
+    
+    /*<React.Fragment>
       <div className="people_container">
       <div className="photo_container">
-        <img src="static/thomas.jpg" />
+        <img src={logo} />
       </div>
       <div className="name">
         Thomas Kunc
       </div>
+      </div>
+    </React.Fragment>*/
+    
+    <React.Fragment>
+
+      <div id="board" className="fancy-scroll-bar">
+        <div className="list-wrapper"> 
+          <div className="list js-list-content"> 
+            <div className="list-header"> 
+              <div className="list-header-target">
+              </div>
+              <textarea id="input"
+              maxLength="512"
+              className="list-header-name mod-list-name js-list-name-input"> 
+              To do
+              </textarea>
+            </div>
+          </div>
+        </div>
       </div>
     </React.Fragment>
   );

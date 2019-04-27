@@ -29,14 +29,3 @@ class People extends React.Component {
     );
   }
 }
-
-// Find all DOM containers, and render Like buttons into them.
-/*document.querySelectorAll('.people_container')
-  .forEach(domContainer => {
-    // Read the comment ID from a data-* attribute.
-    const nameID = domContainer.dataset.name
-    ReactDOM.render(
-      e(People, { nameID: nameID }),
-      domContainer
-    );
-  });*/
