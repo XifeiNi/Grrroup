@@ -1,0 +1,12 @@
+{
+    "name": "abc",
+    "description": "def",
+    "tasks": [
+        "id_1",
+        "id_2"
+    ],
+    "users": [
+        "user_1",
+        "user_2"
+    ]
+}

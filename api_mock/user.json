@@ -1,0 +1,7 @@
+{
+    "name": "Jane Smith",
+    "assigned_tasks":[
+        "id_1"
+    ],
+    "photo_url": "static_photo.jpg"
+}
