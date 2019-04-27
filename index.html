@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <style>
+    .people_container {
+      border: 1px solid #e9ebee;
+      margin: 0 0 13px 13px;
+      padding: 0 10px 0 0;
+      position: relative;
+      vertical-align: top;
+      width: 390px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      width: 370px;
+    }
+
+
+  </style>
+  <body>
+
+    <div class="people_container" data-name="Thomas Kunc">
+      <div class="photo_container">
+        <img src="static/thomas.jpg">
+      </div>
+      <div class="name">
+        Thomas Kunc
+      </div>
+    </div>
+
+    <div class="people_container" data-name="Cecilia"></div>
+
+    <div class="people_container" data-name="Clare"></div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="index.js"></script>
+
+  </body>
+</html>
