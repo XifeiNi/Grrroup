@@ -5,5 +5,4 @@
     "assignee": null,
     "status": "exists|assigned|awaits_approval|approved",
     "color": "0000ff"
-    "substeps": "",
 }
