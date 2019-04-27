@@ -46,7 +46,42 @@ var addTask = function(task) {
 	i.innerHTML = task.description;
 	thirdDiv.appendChild(i);
 
+	a.appendChild(div);
+	a.appendChild(secondDiv);
 	list.appendChild(a);
+
+	var anotherlistdiv = document.createElement("div");
+	anotherlistdiv.className = "peers mR-15";
+
+	var innnerDiv = document.createElement("div");
+	innnerDiv.className = "peer";
+
+	var anotherA = document.createElement("a");
+	anotherA.className = "td-n c-deep-purple-500 cH-blue-500 fsz-md p-5";
+
+	var anotherI = document.createElement("i");
+	anotherI.className = "ti-pencil";
+
+	anotherA.appendChild(anotherI);
+	innnerDiv.appendChild(anotherA);
+
+	anotherlistdiv.appendChild(innnerDiv);
+
+	var sinnnerDiv = document.createElement("div");
+	sinnnerDiv.className = "peer";
+
+	var sanotherA = document.createElement("a");
+	sanotherA.className = "td-n c-red-500 cH-blue-500 fsz-md p-5";
+
+	var sanotherI = document.createElement("i");
+	sanotherI.className = "ti-trash";
+
+	sanotherA.appendChild(sanotherI);
+	sinnnerDiv.appendChild(sanotherA);
+
+	anotherlistdiv.appendChild(sinnnerDiv);
+
+	list.appendChild(anotherlistdiv);
 
 	document.getElementById("task-list").appendChild(list);
 
