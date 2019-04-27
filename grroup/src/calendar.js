@@ -84,8 +84,6 @@ var addTask = function(task) {
 	list.appendChild(anotherlistdiv);
 
 	document.getElementById("task-list").appendChild(list);
-
-
 };
 
 
