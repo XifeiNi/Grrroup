@@ -2,7 +2,7 @@
     "id": "id_1",
     "name": "This Task",
     "description": "AbCdEfGh",
-    "asignee": null,
+    "assignee": null,
     "status": "exists|assigned|awaits_approval|approved",
     "color": "0000ff"
 }
