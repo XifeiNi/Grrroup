@@ -24,6 +24,7 @@ const titles = {
   'basic-table': 'Basic Table',
   'profiles': 'Profiles',
   'todo': 'Todo',
+  'create-user': 'Create User',
 };
 
 module.exports = Object.keys(titles).map(title => {
