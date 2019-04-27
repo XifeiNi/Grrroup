@@ -1,4 +1,24 @@
+var assignee;
+var taskID;
+function addMeTask() {
+	let title = document.getElementById("task-title");
+	let startdate = document.getElementById("start-date");
+	let description = document.getElementById("task-description");
+	if (title != "" && startdate !="" && description !="") {
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST", "http://web.cse.unsw.edu.au/~z5205060/grrroup/api/change/task/".concat(taskID), true);
+		xhr.setRequestHeader('Content-Type', 'application/json');
+		xhr.send(JSON.stringify({
+	        id: taskID, 
+	        name: title, 
+	        description: description, 
+	        assignee: assignee, 
+	        status: "exists", 
+	        color: "0000ff"
+    	}));
+	}
 
+}
 var setName = function(name) {
 	var spaceIndex = 0;
     for (var i = 0; i < name.length; i++) {
@@ -104,10 +124,14 @@ fetch('http://web.cse.unsw.edu.au/~z5205060/grrroup/api/list/users')
     })
     .then((out) => {
     	setName(out[window.localStorage.id-1].name);
+    	assignee = window.localStorage.id;
     	//fetchTask(out[0].assigned_tasks[0]);
 
+    	// Change this to a for loop
     	var text = '{"id": 1, "name": "Complete Grrroup", "description": "Let us get this Hackathon done!", "assignee": 1, "status": "exists", "color": "0000ff"}';
     	var obj = JSON.parse(text);
+    	// taskID being arbitary... please change!
+    	taskID = 2;
     	addTask(obj);
         console.log('Output: ', out[0].assigned_tasks);
 }).catch(err => console.error(err));
