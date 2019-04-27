@@ -103,7 +103,7 @@ fetch('http://127.0.0.1:5000/api/list/users')
     	return res.json() 
     })
     .then((out) => {
-    	setName(out[0].name);
+    	setName(out[window.localStorage.id-1].name);
     	//fetchTask(out[0].assigned_tasks[0]);
 
     	var text = '{"id": 1, "name": "Complete Grrroup", "description": "Let us get this Hackathon done!", "assignee": 1, "status": "exists", "color": "0000ff"}';
