@@ -102,13 +102,9 @@ fetch('http://web.cse.unsw.edu.au/~z5205060/grrroup/api/list/users')
     .then(res => {
     	return res.json()
     })
-    .then(out => {
-			out.forEach(function(entry) {
-				if (entry.id == window.localStorage.id) {
-					setName(entry.name);
-					// fetchTask(out[0].assigned_tasks[0]);
-				}
-			})
+    .then((out) => {
+    	setName(out[window.localStorage.id-1].name);
+    	//fetchTask(out[0].assigned_tasks[0]);
 
     	var text = '{"id": 1, "name": "Complete Grrroup", "description": "Let us get this Hackathon done!", "assignee": 1, "status": "exists", "color": "0000ff"}';
     	var obj = JSON.parse(text);
