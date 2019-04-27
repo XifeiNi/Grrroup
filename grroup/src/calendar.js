@@ -88,9 +88,9 @@ var addTask = function(task) {
 
 
 var fetchTask = function(id) {
-	fetch('http://127.0.0.1:5000/api/get/task/1')
+	fetch('http://web.cse.unsw.edu.au/~z5205060/grrroup/api/get/task/1')
 		.then(res => {
-			return res.json()
+			return res.json();
 		})
 		.then((out) => {
         console.log('Output: ', out);
@@ -98,9 +98,9 @@ var fetchTask = function(id) {
 
 };
 
-fetch('http://127.0.0.1:5000/api/list/users')
+fetch('http://web.cse.unsw.edu.au/~z5205060/grrroup/api/list/users')
     .then(res => {
-    	return res.json() 
+    	return res.json()
     })
     .then((out) => {
     	setName(out[window.localStorage.id-1].name);
