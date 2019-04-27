@@ -21,10 +21,37 @@
     -->
     <title>Grroup</title>
   </head>
+  <style>
+   .topnav {
+    overflow: hidden;
+    background-color: #026aa7;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+/* Style the links inside the navigation bar */
+
+  </style>
   <body>
-    
-    <script></script>
+    <div class="topnav">
+      <input type="text" placeholder="Search..">
+    </div>
+
     <div id="root"></div>
+    <script></script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
